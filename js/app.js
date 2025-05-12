@@ -61,3 +61,30 @@ secondCar.make = "Ford";
 secondCar.model = "Taurus";
 
 console.log(secondCar);
+
+
+
+
+
+class Employee {
+    // The constructor method initializes the properties "name", "title", and "catchphrase"
+    constructor(name, title, catchPhrase) {
+        this.name = name;
+        this.title = title;
+        this.catchPhrase = catchPhrase;
+    }
+
+    introduce() {
+        console.log(`Hi, I am ${this.name}, I am a ${this.title}, ${this.catchPhrase}`);
+    }
+
+}
+
+let spongebob = new Employee("Spongebob", "Frycook", "I'm Ready")
+console.log(spongebob);
+spongebob.introduce();
+
+let squidward = new Employee("Squidward", "Cashier", "I hate everybody");
+console.log(squidward);
+squidward.introduce();
+
